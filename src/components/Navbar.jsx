@@ -1,79 +1,70 @@
 import { useState } from "react";
-import AnchorLink from "react-anchor-link-smooth-scroll";
-import useMediaQuery from "../hooks/useMediaQuery";
-
-const Link = ({ page }) => {
-  // const Link = ({ page, selectedPage, setSelectedPage }) => {
-  const [selectedPage, setSelectedPage] = useState("home"); //Determine which page we are on.
-
-  const lowerCasePage = page.toLowerCase();
-  return (
-    <AnchorLink
-      className={`${
-        selectedPage === lowerCasePage ? "text-yellow" : ""
-      } hover:text-yellow transition duration-500`}
-      href={`#${lowerCasePage}`}
-      onClick={() => setSelectedPage(lowerCasePage)}
-    >
-      {page}
-    </AnchorLink>
-  );
-};
+import Link from "../utils/Link";
 
 const Navbar = () => {
-  // const Navbar = ({ selectedPage, setSelectedPage }) => {
-  const [isMenuToggled, setIsMenuToggled] = useState(false);
-  const isDesktop = useMediaQuery("(min-width: 768px)");
+  const [selectedPage, setSelectedPage] = useState(null); //Determine which page we are on.
+  const [isMobileNavbarIsShown, setIsMobileNavbarIsShown] = useState(false);
 
   const navLinks = ["Home", "Skills", "Projects", "Testimonials", "Contact"];
 
   const renderedNavLinks = navLinks.map((navLink) => {
     return (
-      <Link key={navLink.toLowerCase()} page={navLink}>
-        {navLink}
-      </Link>
+      <li key={navLink.toLowerCase()}>
+        <Link
+          page={navLink}
+          selectedPage={selectedPage}
+          setSelectedPage={setSelectedPage}
+        >
+          {navLink}
+        </Link>
+      </li>
     );
   });
 
-  const isDesktopNavbar = isDesktop ? (
-    <div className=" flex justify-between gap-16 font-opensans text-sm font-semibold ">
-      {renderedNavLinks}
-    </div>
-  ) : (
-    <button
-      className="rounded-full bg-red p-2"
-      onClick={() => setIsMenuToggled(!isMenuToggled)}
-    >
-      <img alt="menu-icon" src="../assets/menu-icon.svg" />
-    </button>
+  const notMobileNavbar = (
+    <>
+      <div>
+        <ul className="md:flex md:justify-between md:gap-10 lg:gap-16 md:font-opensans md:text-sm md:font-semibold list-none hidden ">
+          {renderedNavLinks}
+        </ul>
+      </div>
+
+      {!isMobileNavbarIsShown && (
+        <button
+          className=" md:hidden rounded-full bg-red p-2"
+          onClick={() => setIsMobileNavbarIsShown(!isMobileNavbarIsShown)}
+        >
+          <img alt="menu-icon" src="../assets/menu-icon.svg" />
+        </button>
+      )}
+    </>
   );
 
-  const notDesktopNavbar = !isDesktop && isMenuToggled && (
+  const mobileNavbar = isMobileNavbarIsShown && (
     <div className="fixed right-0 bottom-0 h-full bg-blue w-[300px]">
       <div className="flex justify-end p-12">
         <button
           className="rounded-full bg-red p-2"
-          onClick={() => setIsMenuToggled(!isMenuToggled)}
+          onClick={() => setIsMobileNavbarIsShown(!isMobileNavbarIsShown)}
         >
           <img alt="close-icon" src="../assets/close-icon.svg" />
         </button>
       </div>
       {/* Menu Items */}
-      <div className="flex flex-col gap-10 ml-[33%] text-2xl text-deep-blue ">
+      <ul className="flex flex-col gap-10 ml-[33%] text-2xl text-deep-blue list-none ">
         {renderedNavLinks}
-      </div>
+      </ul>
     </div>
   );
 
   return (
-    <nav className="z-40 w-full fixed top-0 py-6">
-      <div className="flex items-center justify-between mx-auto w-5/6">
+    <nav className="z-40 w-full fixed top-0 h-16 flex items-center ">
+      <div className="flex items-center justify-between mx-auto w-5/6 h-10 ">
         <h4 className=" font-playfair text-3xl font-bold ">Shakhlyn</h4>
-
-        {isDesktopNavbar}
+        {notMobileNavbar}
 
         {/* MOBILE MENU POPUP */}
-        {notDesktopNavbar}
+        {mobileNavbar}
       </div>
     </nav>
   );
