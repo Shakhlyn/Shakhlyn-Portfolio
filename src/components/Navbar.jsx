@@ -7,6 +7,9 @@ const Navbar = () => {
 
   const navLinks = ["Home", "Skills", "Projects", "Testimonials", "Contact"];
 
+  const handleIsnavbarShown = () =>
+    setIsMobileNavbarIsShown(!isMobileNavbarIsShown);
+
   const renderedNavLinks = navLinks.map((navLink) => {
     return (
       <li key={navLink.toLowerCase()}>
@@ -32,7 +35,7 @@ const Navbar = () => {
       {!isMobileNavbarIsShown && (
         <button
           className=" md:hidden rounded-full bg-red p-2"
-          onClick={() => setIsMobileNavbarIsShown(!isMobileNavbarIsShown)}
+          onClick={handleIsnavbarShown}
         >
           <img alt="menu-icon" src="../assets/menu-icon.svg" />
         </button>
@@ -45,7 +48,7 @@ const Navbar = () => {
       <div className="flex justify-end p-12">
         <button
           className="rounded-full bg-red p-2"
-          onClick={() => setIsMobileNavbarIsShown(!isMobileNavbarIsShown)}
+          onClick={handleIsnavbarShown}
         >
           <img alt="close-icon" src="../assets/close-icon.svg" />
         </button>
@@ -58,7 +61,7 @@ const Navbar = () => {
   );
 
   return (
-    <nav className="z-40 w-full fixed top-0 h-16 flex items-center ">
+    <nav className="z-40 w-full fixed top-0 h-16 flex items-center bg-deep-blue ">
       <div className="flex items-center justify-between mx-auto w-5/6 h-10 ">
         <h4 className=" font-playfair text-3xl font-bold ">Shakhlyn</h4>
         {notMobileNavbar}
