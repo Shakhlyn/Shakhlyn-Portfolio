@@ -2,9 +2,9 @@ import React from "react";
 
 const About = () => {
   return (
-    <section id="about" className=" lg:h-screen w-3/4 mx-auto">
+    <section id="about" className=" lg:h-screen md:w-3/4 mx-auto">
       <h2>About</h2>
-      <div className=" mx-auto w-4/6 text-2xl ">
+      <div className=" mx-auto md:w-4/6 text-2xl ">
         <p className="pt-8">
           I am a passionate and dedicated Full Stack Developer with a strong
           interest in backend development. I have a Bachelor of Science degree

@@ -8,7 +8,7 @@ function App() {
     // <div className="app bg-deep-blue ">
     <div className="app bg-slate-100">
       <Navbar />
-      <main className="mt-20 w-3/4 mx-auto mb-auto">
+      <main className="mt-20 w-5/6 md:w-3/4 mx-auto mb-auto">
         <Outlet />
       </main>
       <Footer />
