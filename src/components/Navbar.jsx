@@ -5,7 +5,7 @@ const Navbar = () => {
   const [selectedPage, setSelectedPage] = useState(null); //Determine which page we are on.
   const [isMobileNavbarIsShown, setIsMobileNavbarIsShown] = useState(false);
 
-  const navLinks = ["Home", "Skills", "Projects", "Testimonials", "Contact"];
+  const navLinks = ["Home", "Skills", "Projects", "Contact"];
 
   const handleIsnavbarShown = () =>
     setIsMobileNavbarIsShown(!isMobileNavbarIsShown);

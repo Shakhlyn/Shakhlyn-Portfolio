@@ -1,8 +1,10 @@
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+import { FaRegEnvelope } from "react-icons/fa6";
+import { FaAddressCard } from "react-icons/fa6";
+
 import { motion } from "framer-motion";
+
 import useWindowWidth from "../hooks/useWindowWidth";
 
 const SocialLinks = () => {
@@ -26,15 +28,16 @@ const SocialLinks = () => {
     {
       id: 3,
       label: "E-mail",
-      icon: <HiOutlineMail size={30} />,
+      icon: <FaRegEnvelope size={30} />,
       href: "mailto:na@gmail.com",
     },
     {
       id: 4,
       label: "Resume",
-      icon: <BsFillPersonLinesFill size={30} />,
+      icon: <FaAddressCard size={30} />,
       style: "rounded-br-md",
-      href: "https://mail.google.com/",
+      href: "https://drive.google.com/file/d/1I9ABvEr57Sn28lFkbwBSTHUd5zCQT9o2/view?usp=sharing",
+      //  "https://mail.google.com/",
       download: true,
     },
   ];

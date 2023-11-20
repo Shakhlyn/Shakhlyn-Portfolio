@@ -1,86 +1,16 @@
-import React from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonLinesFill } from "react-icons/bs";
-import { motion } from "framer-motion";
+import React, { useRef } from "react";
 
-const SocialLinks = () => {
-  const socialLinks = [
-    {
-      id: 1,
-      child: (
-        <>
-          LinkedIn <FaLinkedin size={30} />
-        </>
-      ),
-      href: "https://linkedin.com",
-      style: "rounded-tr-md",
-    },
-    {
-      id: 2,
-      child: (
-        <>
-          GitHub <FaGithub size={30} />
-        </>
-      ),
-      href: "https://github.com/",
-    },
-
-    {
-      id: 3,
-      child: (
-        <>
-          E-mail <HiOutlineMail size={30} />
-        </>
-      ),
-      href: "mailto:na@gmail.com",
-    },
-    {
-      id: 4,
-      child: (
-        <>
-          Resume <BsFillPersonLinesFill size={30} />
-        </>
-      ),
-      style: "rounded-br-md",
-      href: "https://mail.google.com/",
-      download: true,
-    },
-  ];
-
-  const renderedSocialLink = socialLinks.map((socialLink) => (
-    <li
-      key={socialLink.id}
-      className={`flex justify-between w-32 h-10 px-3 ml-[-5rem] lg:hover:ml-[-.5rem] lg:hover:rounded-md duration-300 ${socialLink.style} bg-blue `}
-    >
-      <a
-        href={socialLink.href ? socialLink.href : "/"}
-        className="flex justify-between items-center w-full text-white"
-        download={socialLink.download}
-        target="_blank"
-        rel="noreferrer"
-      >
-        {socialLink.child}
-      </a>
-    </li>
-  ));
-
+const Test = () => {
   return (
-    <div className="hidden flex-col top-[35%] left-0 fixed md:flex">
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ duration: 2 }}
-        variants={{
-          hidden: { opacity: 0, y: -100 },
-          visible: { opacity: 1, y: 0 },
-        }}
-      >
-        <ul>{renderedSocialLink}</ul>
-      </motion.div>
+    <div className="flex justify-center md:w-3/5 md:h-full h-96 mx-auto mt-20">
+      <iframe
+        src="https://drive.google.com/file/d/1I9ABvEr57Sn28lFkbwBSTHUd5zCQT9o2/preview"
+        width="640"
+        height="600"
+        allow="autoplay"
+      ></iframe>
     </div>
   );
 };
 
-export default SocialLinks;
+export default Test;
