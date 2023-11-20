@@ -19,7 +19,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="contact py-20 lg:h-screen mobile:w-5/6 md:w-2/3 mx-auto"
+      className="contact py-20 lg:h-screen mobile:w-5/6 mx-auto"
     >
       {/* HEADINGS */}
       <motion.div

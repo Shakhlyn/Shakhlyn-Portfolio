@@ -103,7 +103,7 @@ const Skills = () => {
   });
 
   return (
-    <section id="skills" className=" lg:h-screen w-3/4 mx-auto">
+    <section id="skills" className=" lg:h-screen">
       <div className="flex justify-between gap-2 pt-20 pb-10 ">
         <h2>Skills</h2>
         <p>______________</p>

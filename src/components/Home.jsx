@@ -8,7 +8,7 @@ const Home = () => {
   const [selectedPage, setSelectedPage] = useState(null);
   return (
     <section id="home" className=" md:h-screen ">
-      <div className="w-3/4 mx-auto md:grid md:grid-cols-3 justify-between gap-10 ">
+      <div className="md:grid md:grid-cols-3 justify-between gap-10 ">
         <div className="mt-40 mx-auto md:order-last md:ml-auto ">
           <img
             alt="profile"

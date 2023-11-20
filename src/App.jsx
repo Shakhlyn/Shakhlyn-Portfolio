@@ -1,26 +1,16 @@
-import Navbar from "./components/Navbar";
-import Home from "./components/Home";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
-// import Testimonials from "./components/Testimonials";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import About from "./components/About";
+import { Outlet } from "react-router-dom";
 
-import Test from "./components/test";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     // <div className="app bg-deep-blue ">
     <div className="app bg-slate-100">
       <Navbar />
-      <Home />
-      <About />
-      <Skills />
-      <Projects />
-      {/* <Testimonials /> */}
-      <Contact />
-      <Test />
+      <main className="mt-20 w-3/4 mx-auto mb-auto">
+        <Outlet />
+      </main>
       <Footer />
     </div>
   );
