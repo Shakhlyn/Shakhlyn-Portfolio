@@ -17,10 +17,7 @@ const Contact = () => {
   };
 
   return (
-    <section
-      id="contact"
-      className="contact py-20 lg:h-screen md:w-5/6 mx-auto"
-    >
+    <section id="contact" className="contact mb-32 md:w-5/6 mx-auto">
       {/* HEADINGS */}
       <motion.div
         initial="hidden"
@@ -34,8 +31,9 @@ const Contact = () => {
         className="flex mobile:justify-center md:justify-start w-full"
       >
         <div>
-          <p className="font-playfair font-semibold text-xl">
-            <span className="text-yellow">CONTACT ME</span> TO GET STARTED
+          {/* <p className="font-playfair font-semibold text-xl"> */}
+          <p className="font-playfair font-semibold text-2xl ">
+            <span className="text-yellow ">CONTACT ME</span> TO GET STARTED
           </p>
         </div>
       </motion.div>

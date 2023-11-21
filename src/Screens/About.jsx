@@ -1,9 +1,7 @@
-import { Link } from "react-router-dom";
-
 const About = () => {
   return (
     <section className="md:w-3/4 mx-auto">
-      <h2 className="section-header">More About Me</h2>
+      <h2 className="section-header font-playfair ">More About Me</h2>
       <div className=" mx-auto text-lg md:text-xl ">
         <p className="pt-8">
           I am a passionate and dedicated Full Stack Developer with a strong

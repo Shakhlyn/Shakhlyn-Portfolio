@@ -48,7 +48,7 @@ const Skills = () => {
     {
       id: 5,
       label: "Express js",
-      image: "/assets/skill/expressjs.png",
+      image: "/assets/skill/express.png",
       icon: <SiExpress size={60} />,
     },
 
@@ -104,26 +104,23 @@ const Skills = () => {
 
   const renderedSkills = skillLinks.map((skillLink) => {
     return (
-      <div
+      <li
         key={skillLink.id}
-        className="shadow-sm shadow-dark-gray rounded-md m-4 transition duration-300 hover:scale-110 flex flex-col gap-4 py-2 items-center self-center"
+        className="shadow-sm shadow-dark-gray rounded-md m-4 py-2 px-1 transition duration-300 hover:scale-110 flex flex-col gap-4 items-center self-center"
       >
-        {/* <div className=" text-white">{skillLink.icon}</div> */}
         <img
           src={skillLink.image}
           alt="skill-image"
           className="h-20 w-auto rounded-md "
         />
         <div className=" text-blue ">{skillLink.label}</div>
-      </div>
+      </li>
     );
   });
 
   return (
-    <section className=" lg:h-screen">
-      <div className="flex justify-between gap-2 pt-20 pb-10 ">
-        <h2 className=" section-header">SKILLS</h2>
-      </div>
+    <section className="mb-32">
+      <h2 className=" section-header font-playfair ">TECHNICAL SKILLS</h2>
 
       <motion.div
         initial="hidden"
@@ -135,9 +132,9 @@ const Skills = () => {
           visible: { opacity: 1, y: 0 },
         }}
       >
-        <div className="grid lg:grid-cols-6 md:grid-cols-4 mobile:grid-cols-2 ">
+        <ul className="grid lg:grid-cols-6 md:grid-cols-4 mobile:grid-cols-2 ">
           {renderedSkills}
-        </div>
+        </ul>
       </motion.div>
     </section>
   );

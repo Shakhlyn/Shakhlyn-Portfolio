@@ -22,8 +22,19 @@ const Home = () => {
           />
         </div>
 
-        <div className=" mt-20 flex flex-col items-center justify-center md:items-start md:mt-40 lg:mt-40 md:col-span-2  ">
-          <h1 className=" text-4xl mb-10 ">Welcome to my digital space!</h1>
+        <div className=" mt-20 flex flex-col items-center justify-center md:items-start md:col-span-2  ">
+          {/* <h1 className=" text-4xl mb-6 md:mb-2">WELCOME!</h1>
+          <h2 className=" section-header font-playfair mb-10">
+            I'm Shaokh Al Mahmud
+          </h2> */}
+          <h1 className=" text-4xl md:mb-20 font-playfair ">Welcome!</h1>
+
+          <h2 className="font-semibold text-xl mb-4">
+            This is{" "}
+            <span className="text-yellow text-2xl font-playfair">
+              Shaokh Al Mahmud Shakhlyn
+            </span>
+          </h2>
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -34,12 +45,14 @@ const Home = () => {
               visible: { opacity: 1, x: 0 },
             }}
           >
-            <p className="text-2xl leading-8 ">
-              I'm Shaokh Al Mahmud, a passionate MERN stack developer with a
-              unique journey.
-              {/* <span className="text-xl"> I am Shaokh Al Mahmud Shakhlyn. </span>{" "}
-              Adipiscing arcu, in aliquam fringilla cursus. Elit arcu elementum
-              viverra malesuada sem ac faucibus dolor. Sagittis scelerisque. */}
+            <p className="text-xl leading-8 ">
+              As a self-taught web developer, I've built a strong base in
+              <span className="text-yellow"> MERN</span>-stack technologies and
+              have a keen interest in backend development. I'm excited to apply
+              this knowledge in real-world projects, collaborating with
+              experienced professionals to create innovative software.
+              {/* My goal is to excel in crafting
+              impactful applications. */}
             </p>
           </motion.div>
           <div className=" mt-10">

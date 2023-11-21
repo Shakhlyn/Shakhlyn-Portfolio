@@ -12,7 +12,6 @@ export default {
         blue: "#2CBCE9",
         red: "#DC4492",
         yellow: "#FDCC49",
-        gray: "#ededed",
         "dark-gray": "#757575",
         "opaque-black": "rgba(0,0,0,0.35)",
       },
