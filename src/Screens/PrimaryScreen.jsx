@@ -15,7 +15,7 @@ function PrimaryScreen() {
       <Projects />
       {/* <Testimonials /> */}
       <Contact />
-      <Test />
+      {/* <Test /> */}
     </div>
   );
 }

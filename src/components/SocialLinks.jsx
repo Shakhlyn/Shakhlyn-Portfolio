@@ -1,7 +1,7 @@
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { FaRegEnvelope } from "react-icons/fa6";
-import { FaAddressCard } from "react-icons/fa6";
+import { FaAddressCard, FaRegEnvelope } from "react-icons/fa6";
+// import { FaTwitter } from "react-icons/fa";
 
 import { motion } from "framer-motion";
 
@@ -14,30 +14,36 @@ const SocialLinks = () => {
   const socialLinks = [
     {
       id: 1,
-      label: "LinkedIn",
-      icon: <FaLinkedin size={30} />,
-      href: "https://linkedin.com",
+      label: "GitHub",
+      icon: <FaGithub size={30} />,
+      href: "https://github.com/Shakhlyn",
       style: "rounded-tr-md",
     },
     {
       id: 2,
-      label: "GitHub",
-      icon: <FaGithub size={30} />,
-      href: "https://github.com/",
+      label: "E-mail",
+      icon: <FaRegEnvelope size={30} />,
+      href: "mailto:shakhlyn.sh.du@gmail.com",
     },
     {
       id: 3,
-      label: "E-mail",
-      icon: <FaRegEnvelope size={30} />,
-      href: "mailto:na@gmail.com",
+      label: "LinkedIn",
+      icon: <FaLinkedin size={30} />,
+      href: "https://www.linkedin.com/in/shakhlyn/",
     },
+    // {
+    //   id: 4,
+    //   label: "X",
+    //   icon: <FaTwitter />,
+    //   href: "https://twitter.com",
+    //   style: "rounded-br-md",
+    // },
     {
       id: 4,
       label: "Resume",
       icon: <FaAddressCard size={30} />,
       style: "rounded-br-md",
       href: "https://drive.google.com/file/d/1I9ABvEr57Sn28lFkbwBSTHUd5zCQT9o2/view?usp=sharing",
-      //  "https://mail.google.com/",
       download: true,
     },
   ];

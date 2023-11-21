@@ -1,10 +1,12 @@
 import React from "react";
+import AnchorLink from "react-anchor-link-smooth-scroll";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <section id="about" className=" lg:h-screen md:w-3/4 mx-auto">
-      <h2>About</h2>
-      <div className=" mx-auto md:w-4/6 text-2xl ">
+    <section id="about" className="md:w-3/4 mx-auto">
+      <h2 className="section-header">More About Me</h2>
+      <div className=" mx-auto text-lg md:text-xl ">
         <p className="pt-8">
           I am a passionate and dedicated Full Stack Developer with a strong
           interest in backend development. I have a Bachelor of Science degree
@@ -33,6 +35,11 @@ const About = () => {
           impact.
         </p>
       </div>
+      {/* 
+      <div className="flex gap-10 my-16 ">
+        <p>Interested? </p>
+        <p>Let's connect</p>
+      </div> */}
     </section>
   );
 };

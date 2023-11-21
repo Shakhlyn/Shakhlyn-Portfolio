@@ -12,3 +12,13 @@ body,
   background-color: #02011b;
   @apply text-white;
 }
+
+.header {
+  font-size: xx-large;
+}
+.section-header {
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: #fdcc49;
+}

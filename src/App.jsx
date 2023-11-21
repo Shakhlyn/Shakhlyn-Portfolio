@@ -5,10 +5,9 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    // <div className="app bg-deep-blue ">
-    <div className="app bg-slate-100">
+    <div className="app">
       <Navbar />
-      <main className="mt-20 w-5/6 md:w-3/4 mx-auto mb-auto">
+      <main className="mt-20 w-5/6 md:w-3/4 mx-auto mb-10 pb-4">
         <Outlet />
       </main>
       <Footer />

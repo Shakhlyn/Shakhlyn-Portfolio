@@ -9,7 +9,7 @@ const Contact = () => {
   } = useForm();
 
   const onSubmit = async (e) => {
-    console.log("~ e", e);
+    // console.log("~ e", e);
     const isValid = await trigger();
     if (!isValid) {
       e.preventDefault();
@@ -19,7 +19,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="contact py-20 lg:h-screen mobile:w-5/6 mx-auto"
+      className="contact py-20 lg:h-screen md:w-5/6 mx-auto"
     >
       {/* HEADINGS */}
       <motion.div
@@ -31,7 +31,7 @@ const Contact = () => {
           hidden: { opacity: 0, x: 50 },
           visible: { opacity: 1, x: 0 },
         }}
-        className="flex  mobile:justify-center md:justify-start w-full"
+        className="flex mobile:justify-center md:justify-start w-full"
       >
         <div>
           <p className="font-playfair font-semibold text-xl">
@@ -41,7 +41,7 @@ const Contact = () => {
       </motion.div>
 
       {/* FORM & IMAGE */}
-      <div className="mt-16 w-3/4 mx-auto">
+      <div className="mt-16 md:w-3/4 mx-auto">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -111,12 +111,14 @@ const Contact = () => {
               </p>
             )}
 
-            <button
-              className="p-3 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500 rounded-md"
-              type="submit"
-            >
-              SEND ME A MESSAGE
-            </button>
+            <div className=" flex justify-center md:justify-start">
+              <button
+                className="p-1 px-4 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-blue hover:text-white transition duration-500 rounded-sm"
+                type="submit"
+              >
+                SEND ME A MESSAGE
+              </button>
+            </div>
           </form>
         </motion.div>
       </div>

@@ -93,20 +93,18 @@ const Skills = () => {
     return (
       <div
         key={skillLink.id}
-        className="shadow-sm shadow-dark-gray rounded-md m-4 transition duration-300 hover:scale-110 flex flex-col gap-4 py-2 items-center self-center "
+        className="shadow-sm shadow-dark-gray rounded-md m-4 transition duration-300 hover:scale-110 flex flex-col gap-4 py-2 items-center self-center"
       >
         <div className=" text-white">{skillLink.icon}</div>
-        {/* <div className=" text-green-600 ">{skillLink.icon}</div> */}
-        <div className=" text-yellow ">{skillLink.label}</div>
+        <div className=" text-blue ">{skillLink.label}</div>
       </div>
     );
   });
 
   return (
-    <section id="skills" className=" lg:h-screen">
+    <section className=" lg:h-screen">
       <div className="flex justify-between gap-2 pt-20 pb-10 ">
-        <h2>Skills</h2>
-        <p>______________</p>
+        <h2 className=" section-header">SKILLS</h2>
       </div>
 
       <motion.div

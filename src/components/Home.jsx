@@ -3,11 +3,16 @@ import { useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 import SocialLinks from "./SocialLinks";
+import useWindowWidth from "../hooks/useWindowWidth";
 
 const Home = () => {
-  const [selectedPage, setSelectedPage] = useState(null);
+  const windowWidth = useWindowWidth();
+  const isMobile = windowWidth < 768;
+
+  // const [selectedPage, setSelectedPage] = useState(null);
+
   return (
-    <section id="home" className=" md:h-screen ">
+    <section className=" md:h-screen ">
       <div className="md:grid md:grid-cols-3 justify-between gap-10 ">
         <div className="mt-40 mx-auto md:order-last md:ml-auto ">
           <img
@@ -50,12 +55,11 @@ const Home = () => {
             >
               <AnchorLink
                 className="rounded-r-sm"
-                onClick={() => setSelectedPage("contact")}
+                // onClick={() => setSelectedPage("contact")}
                 href="#contact"
               >
-                <button className="bg-gray text-deep-blue px-6 py-1 lg:px-10 lg:py-1 rounded-md text-lg shadow-sm hover:text-white hover:bg-blue transition duration-500 ">
-                  {" "}
-                  Let's talk{" "}
+                <button className="bg-yellow text-deep-blue px-6 py-1 lg:px-10 rounded-sm text-lg shadow-sm hover:text-white hover:bg-blue transition duration-500 ">
+                  Let's talk
                 </button>
               </AnchorLink>
             </motion.div>

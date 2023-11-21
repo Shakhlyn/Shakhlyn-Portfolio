@@ -20,10 +20,11 @@ const Navbar = () => {
 
   return (
     <nav className="z-40 w-full fixed top-0 h-16 flex items-center bg-deep-blue ">
-      {/* <nav className="w-full  "> */}
-      <div className="flex items-center justify-between mx-auto w-5/6 h-10 ">
-        <h4 className=" font-playfair text-3xl font-bold ">Shakhlyn</h4>
-        <ul className="flex justify-between gap-10 lg:gap-16 font-opensans text-sm md:text-base md:font-semibold list-none">
+      <div className="flex items-center justify-between mx-auto w-5/6 h-10">
+        <h4 className=" font-playfair text-xl sm:text-3xl font-bold ">
+          Shakhlyn
+        </h4>
+        <ul className="flex justify-between gap-4 sm:gap-10 md:gap-16 lg:gap-20 font-opensans text-sm md:text-base md:font-semibold list-none">
           {renderedNavLinks}
         </ul>
       </div>
