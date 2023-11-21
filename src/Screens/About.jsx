@@ -1,10 +1,8 @@
-import React from "react";
-import AnchorLink from "react-anchor-link-smooth-scroll";
 import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <section id="about" className="md:w-3/4 mx-auto">
+    <section className="md:w-3/4 mx-auto">
       <h2 className="section-header">More About Me</h2>
       <div className=" mx-auto text-lg md:text-xl ">
         <p className="pt-8">

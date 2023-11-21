@@ -8,12 +8,10 @@ import Test from "../components/test";
 
 function PrimaryScreen() {
   return (
-    // <div className="app bg-deep-blue ">
-    <div className="app bg-slate-100">
+    <div>
       <Home />
       <Skills />
       <Projects />
-      {/* <Testimonials /> */}
       <Contact />
       {/* <Test /> */}
     </div>

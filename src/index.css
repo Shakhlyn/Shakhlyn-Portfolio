@@ -9,11 +9,11 @@ body,
 #root,
 .app {
   height: 100%;
-  background-color: #02011b;
+  background-color: #020218;
   @apply text-white;
 }
 
-.header {
+/* .header {
   font-size: xx-large;
 }
 .section-header {
@@ -21,4 +21,4 @@ body,
   font-size: 1.25rem;
   line-height: 1.75rem;
   color: #fdcc49;
-}
+} */
