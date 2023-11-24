@@ -9,7 +9,7 @@ const About = () => {
           in Leather Products Engineering from the University of Dhaka. Despite
           my initial academic focus, my true passion lies in the realm of
           computer science. Driven by this passion, I embarked on a journey of
-          self-learning, immersing myself in programming world.
+          self-learning, immersing myself in the programming world.
         </p>
         <p className="pt-8">
           My journey began with HTML5, CSS3, and JavaScript. I further expanded
