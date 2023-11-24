@@ -5,6 +5,8 @@ const Contact = () => {
   const {
     register,
     trigger,
+    // trigger: This function triggers validation of all registered form inputs.
+    // It returns a promise that resolves to true if all inputs are valid or false if errors exist.
     formState: { errors },
   } = useForm();
 
@@ -12,7 +14,7 @@ const Contact = () => {
     // console.log("~ e", e);
     const isValid = await trigger();
     if (!isValid) {
-      e.preventDefault();
+      e.preventDefault(); //If error, only then prevent new tab being created
     }
   };
 
@@ -31,14 +33,13 @@ const Contact = () => {
         className="flex mobile:justify-center md:justify-start w-full"
       >
         <div>
-          {/* <p className="font-playfair font-semibold text-xl"> */}
           <p className="font-playfair font-semibold text-2xl ">
             <span className="text-yellow ">CONTACT ME</span> TO GET STARTED
           </p>
         </div>
       </motion.div>
 
-      {/* FORM & IMAGE */}
+      {/* FORM */}
       <div className="mt-16 md:w-3/4 mx-auto">
         <motion.div
           initial="hidden"
@@ -51,11 +52,11 @@ const Contact = () => {
           }}
           className="mt-10 md:mt-0"
         >
-          <f
-            orm
+          <form
             target="_blank"
             onSubmit={onSubmit}
-            action="https://formsubmit.co/646cd207185071b14707c1903f374963" //instead of using the naked e-mail, using this unique is better. No one finds the real e-mail.
+            // action="https://formsubmit.co/shakhlyn.sh.du@gmail.com"
+            action="https://formsubmit.co/c0b6500b908543aa0ae546b5c2b894f8" //instead of using the naked e-mail, using this unique is better. No one finds the real e-mail.
             method="POST"
           >
             <input
@@ -118,7 +119,7 @@ const Contact = () => {
                 SEND ME A MESSAGE
               </button>
             </div>
-          </f>
+          </form>
         </motion.div>
       </div>
     </section>
