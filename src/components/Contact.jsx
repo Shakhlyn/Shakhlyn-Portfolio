@@ -51,7 +51,8 @@ const Contact = () => {
           }}
           className="mt-10 md:mt-0"
         >
-          <form
+          <f
+            orm
             target="_blank"
             onSubmit={onSubmit}
             action="https://formsubmit.co/646cd207185071b14707c1903f374963" //instead of using the naked e-mail, using this unique is better. No one finds the real e-mail.
@@ -117,7 +118,7 @@ const Contact = () => {
                 SEND ME A MESSAGE
               </button>
             </div>
-          </form>
+          </f>
         </motion.div>
       </div>
     </section>
