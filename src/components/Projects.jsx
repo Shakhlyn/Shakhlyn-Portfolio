@@ -2,6 +2,10 @@ import React from "react";
 import { GoDotFill } from "react-icons/go";
 
 const Projects = () => {
+  const githubLinks = {
+    bookNook: "https://github.com/Shakhlyn/Book-Nook__Backend-RESTful-API",
+    agora: "https://github.com/Shakhlyn/Agora-MERN_stack_e-commerce",
+  };
   return (
     <section className="mb-32">
       <h2 className="section-header font-playfair">PROJECTS</h2>
@@ -20,7 +24,7 @@ const Projects = () => {
             </h3>
           </div>
           <div className=" ml-4 md:ml-20">
-            <p className=" flex flex-row gap-2 items-center md:text-sm text-slate-400 mt-4 mb-10">
+            <div className=" flex flex-row gap-2 items-center md:text-sm text-slate-400 mt-4 mb-10">
               <p> JavaScript </p>
               <p>
                 <GoDotFill />
@@ -46,7 +50,7 @@ const Projects = () => {
                 <GoDotFill />
               </p>
               <p> Bcrypt </p>
-            </p>
+            </div>
             <div className="text-gray-400 ml-4 flex flex-col gap-4 ">
               <p>
                 Book Nook is a full-fledged backend API built using Node.js,
@@ -58,7 +62,13 @@ const Projects = () => {
 
               <div className="md:ml-4 my-5">
                 <button className="px-4 py-1 rounded-full border-2 text-sm text-white border-yellow transition duration-500 ">
-                  Show project
+                  <a
+                    href={githubLinks.bookNook}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    See the project
+                  </a>
                 </button>
               </div>
             </div>
@@ -76,7 +86,7 @@ const Projects = () => {
             </h3>
           </div>
           <div className=" ml-4 md:ml-20">
-            <p className=" flex flex-row gap-2 items-center md:text-sm text-slate-400 mt-4 mb-10">
+            <div className=" flex flex-row gap-2 items-center md:text-sm text-slate-400 mt-4 mb-10">
               <p> JavaScript </p>
               <p>
                 <GoDotFill />
@@ -118,7 +128,7 @@ const Projects = () => {
                 <GoDotFill />
               </p>
               <p> bcryptjs </p>
-            </p>
+            </div>
             <div className="text-gray-400 ml-4 flex flex-col gap-4 ">
               <p>
                 This is a full-stack eCommerce website built with the MERN
@@ -142,7 +152,13 @@ const Projects = () => {
 
               <div className="md:ml-4 my-5">
                 <button className="px-4 py-1 rounded-full border-2 text-sm text-white border-yellow transition duration-500 ">
-                  Show project
+                  <a
+                    href={githubLinks.agora}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    See the project
+                  </a>
                 </button>
               </div>
             </div>

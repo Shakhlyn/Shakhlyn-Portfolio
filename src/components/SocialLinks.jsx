@@ -60,7 +60,7 @@ const SocialLinks = () => {
       <a
         href={socialLink.href ? socialLink.href : "/"}
         className="flex justify-between items-center w-full text-white"
-        download={socialLink.download}
+        // download={socialLink.download}
         target="_blank"
         rel="noreferrer"
       >
