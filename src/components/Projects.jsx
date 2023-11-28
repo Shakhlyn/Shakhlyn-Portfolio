@@ -53,11 +53,14 @@ const Projects = () => {
             </div>
             <div className="text-gray-400 ml-4 flex flex-col gap-4 ">
               <p>
-                Book Nook is a full-fledged backend API built using Node.js,
-                Express.js, and MongoDB, designed to manage book-related data
-                and user interactions. It provides a suite of features catering
-                to both users and administrators, ensuring a seamless and secure
-                book management experience
+                The Book Nook is a comprehensive backend solution facilitating
+                seamless book browsing, searching, filtering, rating, reviewing
+                and user interactions. It ensures a secure environment with user
+                authentication, authorization, and account management features.
+                Administrators enjoy efficient book inventory management,
+                including creating, browsing, updating, and deleting books. User
+                management capabilities enable secure account handling within
+                the system.
               </p>
 
               <div className="md:ml-4 my-5">

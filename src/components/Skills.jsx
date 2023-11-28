@@ -90,10 +90,16 @@ const Skills = () => {
     },
     {
       id: 12,
-      label: "Vitest js",
-      image: "/assets/skill/vitest.jpeg",
+      label: "Redis",
+      image: "/assets/skill/redis.png",
       icon: <SiVitest size={60} />,
     },
+    // {
+    //   id: 13,
+    //   label: "Vitest js",
+    //   image: "/assets/skill/vitest.jpeg",
+    //   icon: <SiVitest size={60} />,
+    // },
     {
       id: 13,
       label: "Python",
