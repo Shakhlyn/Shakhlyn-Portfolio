@@ -10,7 +10,7 @@ const Home = () => {
         <div className="mt-40 mx-auto md:order-last md:ml-auto ">
           <img
             alt="profile"
-            src="assets/person-3.jpeg"
+            src="assets/img.jpg"
             className=" mobile:w-[300px] xs:w-[450] lg:w-[350px] mx-auto rounded-[4%] "
           />
         </div>
