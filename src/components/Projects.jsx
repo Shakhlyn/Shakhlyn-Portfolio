@@ -1,5 +1,4 @@
 import React from "react";
-import { GoDotFill } from "react-icons/go";
 
 const Projects = () => {
   const githubLinks = {

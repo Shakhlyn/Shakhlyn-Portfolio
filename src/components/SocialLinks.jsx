@@ -43,7 +43,7 @@ const SocialLinks = () => {
       label: "Resume",
       icon: <FaAddressCard size={30} />,
       style: "rounded-br-md",
-      href: "https://drive.google.com/file/d/1dFK-lwX3QUJPzI1_Ta3IhuhI8vH-5akS/view?usp=sharing",
+      href: "https://drive.google.com/file/d/1NOkUYG4zDxZJv3DtCQo-HIvehC3nNzqB/view?usp=sharing",
       download: true,
     },
   ];
