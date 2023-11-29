@@ -12,7 +12,7 @@ const Home = () => {
   // const [selectedPage, setSelectedPage] = useState(null);
 
   return (
-    <section className=" md:h-screen ">
+    <section className=" lg:h-screen mb-32 lg:mb-0 ">
       <div className="md:grid md:grid-cols-3 justify-between gap-10 ">
         <div className="mt-40 mx-auto md:order-last md:ml-auto ">
           <img
@@ -27,9 +27,9 @@ const Home = () => {
           <h2 className=" section-header font-playfair mb-10">
             I'm Shaokh Al Mahmud
           </h2> */}
-          <h1 className=" text-4xl md:mb-20 font-playfair ">Welcome!</h1>
+          <h1 className=" text-4xl mb-20 font-playfair ">Welcome!</h1>
 
-          <h2 className="font-semibold text-xl mb-4">
+          <h2 className="font-semibold text-xl mb-6 md:mb-4">
             This is{" "}
             <span className="text-yellow text-2xl font-playfair">
               Shaokh Al Mahmud Shakhlyn
