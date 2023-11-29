@@ -43,7 +43,7 @@ const SocialLinks = () => {
       label: "Resume",
       icon: <FaAddressCard size={30} />,
       style: "rounded-br-md",
-      href: "https://drive.google.com/file/d/1I9ABvEr57Sn28lFkbwBSTHUd5zCQT9o2/view?usp=sharing",
+      href: "https://drive.google.com/file/d/1dFK-lwX3QUJPzI1_Ta3IhuhI8vH-5akS/view?usp=sharing",
       download: true,
     },
   ];
@@ -60,7 +60,6 @@ const SocialLinks = () => {
       <a
         href={socialLink.href ? socialLink.href : "/"}
         className="flex justify-between items-center w-full text-white"
-        // download={socialLink.download}
         target="_blank"
         rel="noreferrer"
       >

@@ -1,16 +1,9 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 import SocialLinks from "./SocialLinks";
-import useWindowWidth from "../hooks/useWindowWidth";
 
 const Home = () => {
-  const windowWidth = useWindowWidth();
-  const isMobile = windowWidth < 768;
-
-  // const [selectedPage, setSelectedPage] = useState(null);
-
   return (
     <section className=" lg:h-screen mb-32 lg:mb-0 ">
       <div className="md:grid md:grid-cols-3 justify-between gap-10 ">
@@ -23,10 +16,6 @@ const Home = () => {
         </div>
 
         <div className=" mt-20 flex flex-col items-center justify-center md:items-start md:col-span-2  ">
-          {/* <h1 className=" text-4xl mb-6 md:mb-2">WELCOME!</h1>
-          <h2 className=" section-header font-playfair mb-10">
-            I'm Shaokh Al Mahmud
-          </h2> */}
           <h1 className=" text-4xl mb-20 font-playfair ">Welcome!</h1>
 
           <h2 className="font-semibold text-xl mb-6 md:mb-4">
@@ -51,8 +40,6 @@ const Home = () => {
               have a keen interest in backend development. I'm excited to apply
               this knowledge in real-world projects, collaborating with
               experienced professionals to create innovative software.
-              {/* My goal is to excel in crafting
-              impactful applications. */}
             </p>
           </motion.div>
           <div className=" mt-10">
@@ -66,11 +53,7 @@ const Home = () => {
                 visible: { opacity: 1, x: 0 },
               }}
             >
-              <AnchorLink
-                className="rounded-r-sm"
-                // onClick={() => setSelectedPage("contact")}
-                href="#contact"
-              >
+              <AnchorLink className="rounded-r-sm" href="#contact">
                 <button className="bg-yellow text-deep-blue px-6 py-1 lg:px-10 rounded-sm text-lg shadow-sm hover:text-white hover:bg-blue transition duration-500 ">
                   Let's talk
                 </button>

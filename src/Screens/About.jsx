@@ -31,11 +31,6 @@ const About = () => {
           impact.
         </p>
       </div>
-      {/* 
-      <div className="flex gap-10 my-16 ">
-        <p>Interested? </p>
-        <p>Let's connect</p>
-      </div> */}
     </section>
   );
 };

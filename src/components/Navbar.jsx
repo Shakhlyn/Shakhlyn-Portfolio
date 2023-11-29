@@ -4,18 +4,33 @@ const Navbar = () => {
   const navLinks = ["Home", "About", "Resume"];
 
   const renderedNavLinks = navLinks.map((navLink) => {
-    return (
-      <li key={navLink.toLowerCase()}>
-        <NavLink
-          to={navLink === "Home" ? "/" : `/${navLink.toLowerCase()}`}
-          className={({ isActive, isPending }) =>
-            isActive ? "text-yellow" : isPending ? "pending" : ""
-          }
-        >
-          {navLink}
-        </NavLink>
-      </li>
-    );
+    if (navLink === "Resume") {
+      return (
+        <li key={navLink.toLowerCase()}>
+          <a
+            href="https://drive.google.com/file/d/1dFK-lwX3QUJPzI1_Ta3IhuhI8vH-5akS/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-yellow transition duration-300"
+          >
+            {navLink}
+          </a>
+        </li>
+      );
+    } else {
+      return (
+        <li key={navLink.toLowerCase()}>
+          <NavLink
+            to={navLink === "Home" ? "/" : `/${navLink.toLowerCase()}`}
+            className={({ isActive, isPending }) =>
+              isActive ? "text-yellow" : isPending ? "pending" : ""
+            }
+          >
+            {navLink}
+          </NavLink>
+        </li>
+      );
+    }
   });
 
   return (

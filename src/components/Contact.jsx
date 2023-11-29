@@ -19,7 +19,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="contact mb-32 md:w-5/6 mx-auto">
+    <section id="contact" className="contact mb-16 md:w-5/6 mx-auto">
       {/* HEADINGS */}
       <motion.div
         initial="hidden"
@@ -55,8 +55,7 @@ const Contact = () => {
           <form
             target="_blank"
             onSubmit={onSubmit}
-            // action="https://formsubmit.co/shakhlyn.sh.du@gmail.com"
-            action="https://formsubmit.co/c0b6500b908543aa0ae546b5c2b894f8" //instead of using the naked e-mail, using this unique is better. No one finds the real e-mail.
+            action="https://formsubmit.co/c0b6500b908543aa0ae546b5c2b894f8" //instead of using the naked e-mail, using this unique is better. No one finds the real e-mail, here 'sh.du' is used.
             method="POST"
           >
             <input
