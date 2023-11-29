@@ -24,33 +24,10 @@ const Projects = () => {
             </h3>
           </div>
           <div className=" ml-4 md:ml-20">
-            <div className=" flex flex-row gap-2 items-center md:text-sm text-slate-400 mt-4 mb-10">
-              <p> JavaScript </p>
-              <p>
-                <GoDotFill />
-              </p>
-              <p> Node js </p>
-              <p>
-                <GoDotFill />
-              </p>
-              <p> Express js </p>
-              <p>
-                <GoDotFill />
-              </p>
-              <p> MongoDB </p>
-              <p>
-                <GoDotFill />
-              </p>
-              <p> Git </p>
-              <p>
-                <GoDotFill />
-              </p>
-              <p> JWT </p>
-              <p>
-                <GoDotFill />
-              </p>
-              <p> Bcrypt </p>
-            </div>
+            <p className=" mobile:text-xs md:text-sm text-slate-400 mt-4 ml-4 mb-10">
+              JavaScript, Node js, Express js, MongoDB, Git, JWT, Bcrypt
+            </p>
+
             <div className="text-gray-400 ml-4 flex flex-col gap-4 ">
               <p>
                 The Book Nook is a comprehensive backend solution facilitating
@@ -89,49 +66,11 @@ const Projects = () => {
             </h3>
           </div>
           <div className=" ml-4 md:ml-20">
-            <div className=" flex flex-row gap-2 items-center md:text-sm text-slate-400 mt-4 mb-10">
-              <p> JavaScript </p>
-              <p>
-                <GoDotFill />
-              </p>
-              <p> React </p>
-              <p>
-                <GoDotFill />
-              </p>
-              <p> React router </p>
-              <p>
-                <GoDotFill />
-              </p>
-              <p> RTK Query </p>
-              <p>
-                <GoDotFill />
-              </p>
-              <p> Tailwind CSS </p>
-              <p>
-                <GoDotFill />
-              </p>
-              <p> Node js </p>
-              <p>
-                <GoDotFill />
-              </p>
-              <p> Express js </p>
-              <p>
-                <GoDotFill />
-              </p>
-              <p> MongoDB </p>
-              <p>
-                <GoDotFill />
-              </p>
-              <p> Git </p>
-              <p>
-                <GoDotFill />
-              </p>
-              <p> JWT </p>
-              <p>
-                <GoDotFill />
-              </p>
-              <p> bcryptjs </p>
-            </div>
+            <p className=" mobile:text-xs md:text-sm text-slate-400 mt-4 ml-4 mb-10">
+              JavaScript, React, React Router, RTK Query, Tailwind CSS, Node js,
+              Express js, MongoDB, Git, JWT, bcryptjs
+            </p>
+
             <div className="text-gray-400 ml-4 flex flex-col gap-4 ">
               <p>
                 This is a full-stack eCommerce website built with the MERN
@@ -140,16 +79,16 @@ const Projects = () => {
                 information. The website also has an admin panel that allows
                 administrators to manage products, users, and orders.
               </p>
-              <div className="flex flex-row gap-3">
+              <div className="flex flex-col md:flex-row max-w-full gap-3">
                 <img
                   src="/assets/project/agora/homepage.png"
                   alt="project-homepage"
-                  className="w-96 h-48"
+                  className=" w-[100%] h-auto md:w-[50%] md:h-auto mx-auto"
                 />
                 <img
                   src="/assets/project/agora/details.png"
                   alt="product-details"
-                  className="w-96 h-48"
+                  className=" w-[100%] h-auto md:w-[50%] md:h-auto mx-auto"
                 />
               </div>
 
