@@ -30,13 +30,14 @@ const Projects = () => {
             <div className="text-gray-400 ml-4 flex flex-col gap-4 ">
               <p>
                 The Book Nook is a comprehensive backend solution facilitating
-                seamless book browsing, searching, filtering, rating, reviewing
-                and user interactions. It ensures a secure environment with user
-                authentication, authorization, and account management features.
-                Administrators enjoy efficient book inventory management,
-                including creating, browsing, updating, and deleting books. User
-                management capabilities enable secure account handling within
-                the system.
+                seamless book browsing, searching, filtering, rating, reviewing,
+                ordering and user interactions along with sorting, paginating,
+                and field limiting functionalities. It ensures a secure
+                environment with user authentication, authorization, and account
+                management features. Administrators enjoy efficient book
+                inventory management, including creating, browsing, updating,
+                and deleting books. User management capabilities enable secure
+                account handling within the system.
               </p>
 
               <div className="md:ml-4 my-5">
@@ -73,10 +74,14 @@ const Projects = () => {
             <div className="text-gray-400 ml-4 flex flex-col gap-4 ">
               <p>
                 This is a full-stack eCommerce website built with the MERN
-                stack. The website allows users to browse and purchase products,
-                as well as rate the products and manage their account
-                information. The website also has an admin panel that allows
-                administrators to manage products, users, and orders.
+                stack. The website allows users to browse, search, and purchase
+                products, as well as rate the products and manage their account
+                information. Additionally, users can conveniently add desired
+                products to their cart for checkout. This allows them to adjust
+                the quantity of each item, remove unwanted ones, and view the
+                total cost before proceeding to checkout. The website also has
+                an admin panel that allows administrators to manage products,
+                users, and orders.
               </p>
               <div className="flex flex-col md:flex-row max-w-full gap-3">
                 <img
