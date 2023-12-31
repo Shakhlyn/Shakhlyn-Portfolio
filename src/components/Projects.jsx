@@ -1,10 +1,8 @@
 import React from "react";
 
+import { projectBookNook, projectAgora } from "../constants";
+
 const Projects = () => {
-  const githubLinks = {
-    bookNook: "https://github.com/Shakhlyn/Book-Nook__Backend-RESTful-API",
-    agora: "https://github.com/Shakhlyn/Agora-MERN_stack_e-commerce",
-  };
   return (
     <section className="mb-32">
       <h2 className="section-header font-playfair">PROJECTS</h2>
@@ -43,7 +41,8 @@ const Projects = () => {
               <div className="md:ml-4 my-5">
                 <button className="px-4 py-1 rounded-full border-2 text-sm text-white border-yellow transition duration-500 ">
                   <a
-                    href={githubLinks.bookNook}
+                    // href={githubLinks.bookNook}
+                    href={projectBookNook}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -99,7 +98,7 @@ const Projects = () => {
               <div className="md:ml-4 my-5">
                 <button className="px-4 py-1 rounded-full border-2 text-sm text-white border-yellow transition duration-500 ">
                   <a
-                    href={githubLinks.agora}
+                    href={projectAgora}
                     target="_blank"
                     rel="noopener noreferrer"
                   >

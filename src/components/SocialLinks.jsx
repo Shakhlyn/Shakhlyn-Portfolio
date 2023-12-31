@@ -6,6 +6,7 @@ import { FaAddressCard, FaRegEnvelope } from "react-icons/fa6";
 import { motion } from "framer-motion";
 
 import useWindowWidth from "../hooks/useWindowWidth";
+import { gitHubLink, emailLink, LinkedInLink, resumeLink } from "../constants";
 
 const SocialLinks = () => {
   const windowWidth = useWindowWidth();
@@ -16,26 +17,32 @@ const SocialLinks = () => {
       id: 1,
       label: "GitHub",
       icon: <FaGithub size={30} />,
-      href: "https://github.com/Shakhlyn",
+
+      /*
+    "socialLink.href" is already referencing the imported constants (gitHubLink, emailLink, etc.)
+    that were exported from the constants.js file. There's no need for additional curly braces
+    because you're accessing the properties directly from the object (socialLink).
+    */
+      href: gitHubLink,
       style: "rounded-tr-md",
     },
     {
       id: 2,
       label: "E-mail",
       icon: <FaRegEnvelope size={30} />,
-      href: "mailto:shakhlyn.sh.du@gmail.com",
+      href: emailLink,
     },
     {
       id: 3,
       label: "LinkedIn",
       icon: <FaLinkedin size={30} />,
-      href: "https://www.linkedin.com/in/shakhlyn/",
+      href: LinkedInLink,
     },
     // {
     //   id: 4,
     //   label: "X",
     //   icon: <FaTwitter />,
-    //   href: "https://twitter.com",
+    //   href: twitterLink,
     //   style: "rounded-br-md",
     // },
     {
@@ -43,7 +50,7 @@ const SocialLinks = () => {
       label: "Resume",
       icon: <FaAddressCard size={30} />,
       style: "rounded-br-md",
-      href: "https://drive.google.com/file/d/1DaIOyQUxM29I1ZLwl50FAJ6k9Qu4nZ-e/view?usp=sharing",
+      href: resumeLink,
       download: true,
     },
   ];
