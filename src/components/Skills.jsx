@@ -9,69 +9,79 @@ const Skills = () => {
     },
     {
       id: 2,
+      label: "TypeScript",
+      image: "/assets/skill/ts.png",
+    },
+    {
+      id: 3,
       label: "React js",
       image: "/assets/skill/reactjs.png",
     },
     {
-      id: 3,
+      id: 4,
       label: "RTK Query",
       image: "/assets/skill/RTK.png",
     },
+    {
+      id: 5,
+      label: "Tailwind",
+      image: "/assets/skill/tailwind.png",
+    },
+    {
+      id: 6,
+      label: "Bootstrap",
+      image: "/assets/skill/bootstrap.png",
+    },
 
     {
-      id: 4,
+      id: 7,
       label: "Node js",
       image: "/assets/skill/Node.png",
     },
 
     {
-      id: 5,
+      id: 8,
       label: "Express js",
       image: "/assets/skill/express.png",
     },
-
     {
-      id: 6,
+      id: 9,
       label: "MongoDB",
       image: "/assets/skill/mongodb.png",
     },
+    // {
+    //   id: 10,
+    //   label: "PostgreSQL",
+    //   image: "/assets/skill/postgresql.png",
+    // },
     {
-      id: 7,
-      label: "Tailwind",
-      image: "/assets/skill/tailwind.png",
+      id: 11,
+      label: "Redis",
+      image: "/assets/skill/redis.png",
     },
     {
-      id: 8,
-      label: "Bootstrap",
-      image: "/assets/skill/bootstrap.png",
-    },
-    {
-      id: 9,
+      id: 12,
       label: "Git",
       image: "/assets/skill/git.png",
     },
     {
-      id: 10,
+      id: 13,
       label: "GitHub",
       image: "/assets/skill/github.png",
     },
     {
-      id: 11,
-      label: "Linux",
+      id: 14,
+      label: "Linux CLI",
       image: "/assets/skill/linux.png",
     },
-    {
-      id: 12,
-      label: "Redis",
-      image: "/assets/skill/redis.png",
-    },
+
     // {
-    //   id: 13,
+    //   id: 15,
     //   label: "Vitest js",
     //   image: "/assets/skill/vitest.jpeg",
     // },
     {
-      id: 13,
+      id: 16,
       label: "Python",
       image: "/assets/skill/python.png",
     },
@@ -85,7 +95,8 @@ const Skills = () => {
       >
         <img
           src={skillLink.image}
-          alt="skill-image"
+          // alt="skill-image"
+          alt={`${skillLink.label}-image`}
           className="h-20 w-auto rounded-md "
         />
         <div className=" text-blue ">{skillLink.label}</div>
